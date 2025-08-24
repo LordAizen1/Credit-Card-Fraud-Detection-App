@@ -1,0 +1,96 @@
+/* frontend_app/style.css - Dark Theme */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282c34; /* Dark background */
+    color: #abb2bf; /* Light gray text */
+}
+
+.container {
+    background-color: #3a404c; /* Slightly lighter dark for container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #61afef; /* Blueish for headings */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.note {
+    font-size: 0.85em;
+    color: #5c6370; /* Darker gray for notes */
+    margin-top: 15px;
+}
+
+#input-fields label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #e0e0e0; /* Lighter color for labels */
+}
+
+#input-fields select {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5c6370;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #4b5263; /* Darker input background */
+    color: #abb2bf; /* Light text in input */
+}
+
+button {
+    background-color: #98c379; /* Greenish for action */
+    color: #282c34; /* Dark text on button */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7baf5a;
+}
+
+#result {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #5c6370;
+}
+
+#result h2 {
+    color: #61afef;
+    margin-bottom: 10px;
+}
+
+#predictionText {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e06c75; /* Red for fraudulent */
+}
+
+#predictionText[style*="green"] {
+    color: #98c379; /* Green for non-fraudulent */
+}
+
+#probabilityText {
+    font-size: 1em;
+    color: #abb2bf;
+}

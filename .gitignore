@@ -1,0 +1,47 @@
+# Virtual environment
+fraud_detection_env/
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb-filter
+.vscode/
+
+# OS generated files
+.DS_Store
+.Trashes
+Thumbs.db
+ehthumbs.db
+*.bak
+*.tmp
+*.log
+
+# Specific to this project
+creditcard.csv # Large data file, typically not committed
+# Ignore the .joblib files in the root, but we'll explicitly add them in api_app later
+random_forest_fraud_model.joblib
+time_amount_scaler.joblib

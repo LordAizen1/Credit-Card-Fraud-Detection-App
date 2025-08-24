@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Credit Card Fraud Detector</h1>
+        <p>Enter transaction details to check for fraud.</p>
+
+        <div id="input-fields">
+            <label for="sampleSelector">Select a Sample Transaction:</label>
+            <select id="sampleSelector">
+                <option value="">-- Select a sample --</option>
+            </select>
+            <p class="note">These samples include all 30 scaled features (V1-V28, Time, Amount).</p>
+        </div>
+
+        <button id="predictButton">Predict Fraud</button>
+
+        <div id="result">
+            <h2>Prediction:</h2>
+            <p id="predictionText"></p>
+            <p id="probabilityText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
